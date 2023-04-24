@@ -1,0 +1,11 @@
+.slide img {
+    width: 100%;
+    height: 608px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide img {
+        height: 300px;
+    }
+}

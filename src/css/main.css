@@ -1,0 +1,69 @@
+:root {
+  --primary-color: black;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin-top: 64px;
+}
+
+button {
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.container {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 12px;
+  max-width: 1080px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.hero span {
+  margin: 24px 0;
+}
+
+.hero button {
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  padding: 18px 54px;
+  border-radius: 2px;
+  border: none;
+}
+
+.hero button:hover {
+  cursor: pointer;
+  background-color: #000000b3;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+}
