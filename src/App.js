@@ -1,6 +1,9 @@
 import { Slides } from './components/slides';
 import { Header } from './components/header';
 import { Hero } from './components/hero';
+import GMap from './components/map';
+import AboutUs from './components/aboutus';
+import ContactUs from './components/contactus';
 import './css/main.css';
 
 function App() {
@@ -10,7 +13,9 @@ function App() {
       <main>
         <Hero />
         <Slides />
-        <div style={{ height: 200 }}></div>
+        <AboutUs />
+        <GMap />
+        <ContactUs />
       </main>
     </>
   );

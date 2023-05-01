@@ -18,8 +18,8 @@ export function Header() {
       </div>
 
       <div className={`menu ${openMen ? 'absolute' : ''}`}>
-        <a href='#about-us' onClick={handleItemClick}>About Us</a>
-        <a href='#find-us' onClick={handleItemClick}>Find Us</a>
+        <a href='#aboutus' onClick={handleItemClick}>About Us</a>
+        <a href='#findus' onClick={handleItemClick}>Find Us</a>
       </div>
 
       <a className="menu-icon" onClick={() => setOpenMen(prev => !prev)}>

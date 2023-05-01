@@ -1,0 +1,80 @@
+.contactus {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.outer {
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-right: 12px;
+}
+
+/* innerside in outer box */
+.inner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #fff;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+/* center circle of logo */
+.inner::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+}
+
+/* top right circle of logo */
+.inner::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  right: 3px;
+}
+
+.operation {
+  display: grid;
+  grid-template-columns: 150px 3fr;
+}
+
+.contactus h2,
+.contactus h4 {
+  margin-top: 0;
+}
+
+.contactus h4 {
+  letter-spacing: 1;
+  margin-bottom: 0;
+}
+
+.contactus a {
+  display: flex;
+  align-items: center;
+  height: max-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactus {
+    grid-template-columns: 1fr;
+  }
+
+  .contactus a {
+    margin-bottom: 48px;
+  }
+}
